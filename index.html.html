@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07152d">
+<meta name="description" content="Saieesh Royal — AI & Machine Learning student at Uttaranchal University, Dehradun.">
+<title>SAIEESH ROYAL | AI &amp; ML Student</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#07152d;--white:#f5f9ff;--ink:#eaf3ff;--muted:#a6b8d2;--line:rgba(130,180,255,.18);--glass:rgba(17,42,78,.58);--shadow:0 24px 70px rgba(0,8,28,.38);--accent:#42a5ff;--blue:#42a5ff;--cyan:#67e8f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 10%,#123c72 0,transparent 34%),radial-gradient(ellipse at 85% 45%,#0c2b55 0,transparent 38%),linear-gradient(135deg,#07152d,#030914)}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,90%);margin:auto}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:10;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,17,38,.72);backdrop-filter:blur(20px);border-bottom:1px solid rgba(103,180,255,.22)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.03rem;font-weight:800;letter-spacing:-.06em}.brand span{font-weight:500;color:var(--muted)}.navlinks{display:flex;gap:28px;font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:#a7bddb}.navlinks a{transition:.25s}.navlinks a:hover{color:#fff}
+.menu{display:none;border:0;background:none;font-size:1.5rem}
+.hero{min-height:790px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:35px;padding:125px 0 75px;position:relative}
+.micro{font:500 .7rem 'DM Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#79baff}.micro:before{content:"";display:inline-block;width:30px;height:1px;background:#42a5ff;vertical-align:middle;margin-right:12px}
+h1{font-size:clamp(3.8rem,8.3vw,7.5rem);letter-spacing:-.095em;line-height:.91;margin:24px 0 25px;font-weight:800}.name-outline{color:transparent;-webkit-text-stroke:1.5px #25282e}
+.hero-copy{font-size:1.04rem;line-height:1.9;color:#b1c4df;max-width:560px}.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin:32px 0;color:#a8c3e7;font:500 .72rem 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid rgba(103,180,255,.55);border-radius:5px;padding:14px 21px;font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;transition:.3s;display:inline-flex;align-items:center;gap:16px}.btn.dark{background:linear-gradient(135deg,#1677e8,#0649a8);color:white}.btn:hover{transform:translateY(-4px);box-shadow:0 12px 24px #2222}.btn.light{border-color:#5d8fc8;background:rgba(12,38,72,.7)}
+.visual{height:500px;position:relative;display:grid;place-items:center;perspective:900px}
+.glass-orbit{position:absolute;width:390px;height:390px;border:1px solid #66baff;border-radius:50%;box-shadow:inset 0 0 40px #42a5ff30,0 0 65px #168bff35;animation:orbit 18s linear infinite}
+.glass-orbit:before,.glass-orbit:after{content:"";position:absolute;inset:28px;border:1px solid #7cc8ff88;border-radius:50%;transform:rotateX(68deg)}
+.glass-orbit:after{transform:rotateY(68deg)}
+.diamond{position:absolute;width:210px;height:210px;transform:rotate(45deg);border:1px solid #8bd2ff;background:linear-gradient(135deg,#bdeaff88,#1677e855 55%,#ffffff20);backdrop-filter:blur(16px);box-shadow:inset 8px 8px 28px #b9e8ff55,0 25px 70px #006dff55;animation:float 6s ease-in-out infinite}
+.diamond:before{content:"";position:absolute;inset:17px;border:1px solid #ffffffc9}
+.diamond.d2{width:118px;height:118px;transform:translate(135px,-100px) rotate(45deg);animation-delay:-2s;background:linear-gradient(135deg,#d9f4ff,#258cff88)}
+.diamond.d3{width:82px;height:82px;transform:translate(-145px,125px) rotate(45deg);animation-delay:-4s}
+.core{position:relative;z-index:2;width:175px;height:175px;display:grid;place-items:center;text-align:center;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:linear-gradient(145deg,#dff7ff,#248cff);box-shadow:0 20px 60px #007bff66;font-size:2.4rem;font-weight:800;letter-spacing:-.1em}
+.core small{display:block;font:500 .52rem 'DM Mono',monospace;letter-spacing:.14em;margin-top:7px}
+.shard{position:absolute;width:30px;height:30px;background:linear-gradient(135deg,#c8f1ff,#238bff);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:.85;animation:shatter 7s ease-in-out infinite}
+.s1{top:16%;left:10%;animation-delay:-1s}.s2{top:22%;right:8%;width:18px;height:18px;animation-delay:-3s}.s3{bottom:15%;right:12%;width:42px;height:42px;animation-delay:-4s}.s4{bottom:20%;left:8%;width:14px;height:14px;animation-delay:-2s}
+.visual-label{position:absolute;bottom:0;right:0;font:500 .65rem 'DM Mono',monospace;color:#82b8ef;letter-spacing:.12em}
+@keyframes float{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -17px;rotate:4deg}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes shatter{0%,100%{transform:translate(0,0) rotate(0);opacity:.35}50%{transform:translate(12px,-18px) rotate(45deg);opacity:1}}
+section{padding:110px 0;border-top:1px solid rgba(103,180,255,.18);position:relative}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:48px}.eyebrow{font:500 .68rem 'DM Mono',monospace;color:#79baff;letter-spacing:.17em;text-transform:uppercase}.section-title{font-size:clamp(2.6rem,5vw,4.5rem);line-height:1;letter-spacing:-.08em;margin:12px 0 0}.section-index{font:500 .72rem 'DM Mono',monospace;color:#8dbce9}
+.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}.about-mark{font-size:clamp(5rem,12vw,10rem);font-weight:800;letter-spacing:-.13em;color:#174c87;line-height:.85}.about-text{font-size:1.12rem;line-height:2;color:#b0c5e2;max-width:720px}.about-text strong{color:#202329}
+.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.info{padding:22px;border:1px solid #3a6da5;background:rgba(15,43,79,.66);box-shadow:0 12px 35px #0005}.info span{display:block;font:500 .62rem 'DM Mono',monospace;color:#83a9d2;text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px}.info b{font-size:.95rem}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{min-height:180px;padding:24px;background:linear-gradient(145deg,rgba(31,85,145,.72),rgba(9,27,54,.8));border:1px solid #4b8ac8;box-shadow:0 18px 40px #0005;position:relative;overflow:hidden;transition:.35s}.skill:after{content:"";position:absolute;width:100px;height:100px;border:1px solid #fff;transform:rotate(45deg);right:-54px;bottom:-54px}.skill:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:var(--shadow)}.skill-no{font:500 .65rem 'DM Mono',monospace;color:#8dbce9}.skill h3{font-size:1.5rem;letter-spacing:-.06em;margin:38px 0 0}.skill p{color:#83a9d2;font-size:.75rem;margin:4px 0}
+.interest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.interest{display:flex;align-items:center;justify-content:space-between;padding:25px 28px;border:1px solid #3e78b2;background:rgba(13,39,73,.72);font-weight:700;font-size:1.05rem}.interest span{font:500 .8rem 'DM Mono',monospace;color:#9298a0}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{min-height:245px;padding:28px;background:linear-gradient(145deg,#153c69,#091a34);border:1px solid #4389cb;position:relative;overflow:hidden;box-shadow:0 15px 45px #3439440a}.project:after{content:"";position:absolute;width:180px;height:180px;right:-65px;bottom:-90px;transform:rotate(45deg);border:1px solid #fff;box-shadow:0 0 0 18px #ffffff30,0 0 0 38px #ffffff20}.project-tag{font:500 .65rem 'DM Mono',monospace;color:#81c6ff;text-transform:uppercase;letter-spacing:.14em}.project h3{font-size:1.55rem;letter-spacing:-.06em;margin:34px 0 8px}.project p{color:#b0c5e2;max-width:390px;font-size:.88rem;line-height:1.8}.placeholder-note{font-size:.72rem;color:#8dbce9;margin-top:18px}
+.education{display:grid;grid-template-columns:220px 1fr;gap:35px;align-items:start}.year{font:500 .8rem 'DM Mono',monospace;color:#7b818a;padding-top:8px}.edu-card{padding:32px;border:1px solid #3d79b7;background:rgba(13,38,72,.78);box-shadow:var(--shadow)}.edu-card h3{font-size:1.8rem;letter-spacing:-.06em;margin:0 0 8px}.edu-card p{color:#b0c5e2;margin:5px 0}.edu-pill{display:inline-block;border:1px solid #4e83b7;border-radius:99px;padding:7px 12px;margin:15px 7px 0 0;font:500 .65rem 'DM Mono',monospace;text-transform:uppercase}
+.growth{display:grid;grid-template-columns:1fr 1fr;gap:16px}.growth-card{padding:28px;border:1px solid #3c75ae;background:rgba(13,38,72,.72)}.growth-card h3{margin:0 0 9px;font-size:1.2rem}.growth-card p{color:#727882;font-size:.88rem;line-height:1.8;margin:0}
+.contact-panel{padding:55px;background:linear-gradient(135deg,#0d2b52,#030b18);color:#f7fbff;position:relative;overflow:hidden}.contact-panel:after{content:"";position:absolute;width:280px;height:280px;right:3%;top:-90px;border:1px solid #ffffff30;transform:rotate(45deg);box-shadow:0 0 0 30px #ffffff08,0 0 0 60px #ffffff05}.contact-panel .eyebrow{color:#81c6ff}.contact-panel h2{font-size:clamp(2.7rem,6vw,5rem);letter-spacing:-.08em;line-height:1;margin:18px 0}.contact-panel p{color:#b0c5e2;max-width:560px;line-height:1.8}.contact-panel .btn{background:linear-gradient(135deg,#b8eaff,#258cff);color:#04152c;border-color:#7dcaff;position:relative;z-index:2;margin-top:14px}
+footer{padding:28px 0;color:#83a9d2;font:500 .65rem 'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:145px}.visual{height:400px}.glass-orbit{width:310px;height:310px}.skill-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:25px}.navlinks{gap:14px;font-size:.65rem}}
+@media(max-width:600px){.wrap{width:88%}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;padding:22px 6%;background:#071a35f5;flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.hero{min-height:auto;padding:135px 0 60px}h1{font-size:clamp(3.5rem,16vw,5.5rem)}.visual{height:340px}.glass-orbit{width:260px;height:260px}.diamond{width:155px;height:155px}.core{width:135px;height:135px;font-size:2rem}.diamond.d2{width:85px;height:85px;translate:20px 0}.diamond.d3{width:60px;height:60px}.section-head{align-items:start}.about-grid{grid-template-columns:1fr;gap:20px}.about-mark{font-size:6rem}.info-strip{grid-template-columns:1fr}.skill-grid{grid-template-columns:repeat(2,1fr);gap:9px}.skill{min-height:150px;padding:17px}.skill h3{font-size:1.25rem;margin-top:30px}.interest-grid,.project-grid,.growth{grid-template-columns:1fr}.education{grid-template-columns:1fr;gap:10px}.edu-card{padding:23px}.contact-panel{padding:35px 25px}footer{flex-direction:column}.section-title{font-size:3rem}section{padding:80px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* SAIEESH ROYAL — electric-blue glass motion layer */
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.18;background-image:linear-gradient(rgba(93,174,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(93,174,255,.12) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;background:linear-gradient(90deg,#2d7dff,#67e8f9);box-shadow:0 0 16px #42a5ff}
+.cursor-glow{position:fixed;width:330px;height:330px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,#168bff20 0,transparent 68%);transform:translate(-50%,-50%);mix-blend-mode:screen}
+.micro,.eyebrow,.section-index{color:#7fc4ff}
+.name-outline{-webkit-text-stroke:1.5px #74c9ff}
+.glass-orbit{animation:orbit 22s linear infinite,bluePulse 4s ease-in-out infinite}
+.diamond{animation:float 6s ease-in-out infinite,blueShine 5s ease-in-out infinite}
+.core{color:#062044;text-shadow:0 2px 18px #fff9}
+.shard{filter:drop-shadow(0 0 9px #48b6ff)}
+.skill:hover,.project:hover,.info:hover,.growth-card:hover{border-color:#70c7ff;box-shadow:0 22px 65px #007bff30,0 0 24px #168bff22;transform:translateY(-7px)}
+.skill,.project,.info,.growth-card,.edu-card,.interest{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.btn{box-shadow:0 0 0 rgba(66,165,255,0);transition:transform .3s,box-shadow .3s,filter .3s}
+.btn:hover{box-shadow:0 0 28px #168bff66;filter:brightness(1.12)}
+.hero-content{position:relative;z-index:2}
+.visual{filter:drop-shadow(0 0 35px #087bff24)}
+.contact-panel{border:1px solid #2875b7;box-shadow:0 25px 80px #0008}
+@keyframes bluePulse{0%,100%{box-shadow:inset 0 0 40px #42a5ff20,0 0 45px #168bff20}50%{box-shadow:inset 0 0 60px #42a5ff55,0 0 85px #168bff55}}
+@keyframes blueShine{0%,100%{filter:hue-rotate(0deg) brightness(1)}50%{filter:hue-rotate(12deg) brightness(1.18)}}
+@media(max-width:600px){.cursor-glow{display:none}.brand{font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){.cursor-glow{display:none}}
+
+
+/* Sky-blue edition: airy glass, bright blue highlights */
+:root{--paper:#eaf6ff;--white:#ffffff;--ink:#102b46;--muted:#52708d;--line:rgba(46,144,218,.2);--glass:rgba(255,255,255,.72);--shadow:0 24px 70px rgba(38,112,166,.16);--accent:#39a9f5;--blue:#39a9f5;--cyan:#8be4ff}
+body{background:#eaf6ff!important;color:#102b46!important}
+body:before{background:radial-gradient(ellipse at 14% 12%,#ffffff 0,transparent 36%),radial-gradient(ellipse at 86% 35%,#b9e6ff 0,transparent 42%),linear-gradient(135deg,#eff9ff,#d8efff)!important}
+body:after{background-image:linear-gradient(rgba(51,153,222,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(51,153,222,.10) 1px,transparent 1px)!important}
+header{background:rgba(244,251,255,.78)!important;border-bottom:1px solid rgba(65,157,219,.25)!important}
+.brand,.navlinks,.hero-meta,.hero-copy,.about-text,.info b,.skill h3,.interest,.project h3,.edu-card h3,.growth-card h3{color:#123654!important}
+.navlinks{color:#456b8b!important}
+.micro,.eyebrow,.section-index,.skill-no,.project-tag,.year,.visual-label{color:#278acb!important}
+.name-outline{-webkit-text-stroke:1.7px #168bd6!important}
+.btn.dark{background:linear-gradient(135deg,#39b8f4,#167bd0)!important;color:#fff!important;border-color:#168bd0!important}
+.btn.light{background:rgba(255,255,255,.65)!important;border-color:#82c7ef!important;color:#14527d!important}
+.glass-orbit{border-color:#70caff!important;box-shadow:inset 0 0 40px #fff9,0 0 60px #52b9f455!important}
+.glass-orbit:before,.glass-orbit:after{border-color:#68c8ffb5!important}
+.diamond{background:linear-gradient(135deg,#ffffffed,#8dd6ffbb 55%,#d9f3ffbb)!important;border-color:#fff!important;box-shadow:inset 8px 8px 28px #fff,18px 25px 50px #368acb40!important}
+.diamond.d2{background:linear-gradient(135deg,#fff,#8bd5ff)!important}
+.core{background:linear-gradient(145deg,#fff,#a8e2ff)!important;color:#075184!important;box-shadow:0 20px 50px #319bd744!important}
+.shard{background:linear-gradient(135deg,#fff,#48b9f5)!important;filter:drop-shadow(0 0 9px #35a9ee88)!important}
+section{border-top-color:#b9e4fa!important}
+.about-mark{color:#b4def5!important}
+.info,.skill,.interest,.project,.edu-card,.growth-card{background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(222,243,255,.78))!important;border:1px solid rgba(87,174,226,.4)!important;box-shadow:0 15px 42px rgba(55,133,183,.10)!important}
+.info span,.skill p,.project p,.edu-card p,.growth-card p,.placeholder-note{color:#5c7b98!important}
+.skill:hover,.project:hover,.info:hover,.growth-card:hover,.edu-card:hover{border-color:#39a9f5!important;box-shadow:0 22px 65px #39a9f52b,0 0 24px #168bff1c!important}
+.project{background:linear-gradient(145deg,#fff,#d8f0ff)!important}
+.contact-panel{background:linear-gradient(135deg,#1c83c5,#0b477b)!important;border:1px solid #78ceff!important;box-shadow:0 25px 80px #267bb833!important}
+.contact-panel .eyebrow{color:#bceaff!important}
+.contact-panel p{color:#e0f5ff!important}
+.contact-panel .btn{background:#fff!important;color:#075184!important;border-color:#fff!important}
+footer{color:#557b9a!important}
+#scroll-progress{background:linear-gradient(90deg,#4bbcff,#9aeaff)!important;box-shadow:0 0 16px #48baff!important}
+.cursor-glow{background:radial-gradient(circle,#32b5ff30 0,transparent 68%)!important}
+@media(max-width:600px){.navlinks.open{background:#edf8fffa!important}}
+
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div><div class="cursor-glow" aria-hidden="true"></div>
+<div class="noise"></div>
+<header><nav class="wrap"><a class="brand" href="#home">SAIEESH<span> ROYAL.</span></a><button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#certifications">Learning</a><a href="#contact">Contact</a></div></nav></header>
+<main>
+<section class="hero wrap" id="home" style="border:0">
+ <div class="hero-content">
+  <div class="micro">Portfolio · 2026 / Dehradun, India</div>
+  <h1>SAIEESH<br><span class="name-outline">ROYAL.</span></h1>
+  <p class="hero-copy">An AI &amp; Machine Learning student, curious about the ideas and technology shaping tomorrow. Exploring code, problem-solving and intelligent systems — one concept at a time.</p>
+  <div class="hero-meta"><span>AI &amp; ML Student</span><span>B.Tech · CSE</span><span>Class of 2028</span></div>
+  <div class="actions"><a class="btn dark" href="#about">Discover my profile <span>↘</span></a><a class="btn light" href="#contact">Let's connect <span>↗</span></a></div>
+ </div>
+ <div class="visual" aria-label="Animated glass rhombus artwork">
+  <div class="glass-orbit"></div><div class="diamond"></div><div class="diamond d2"></div><div class="diamond d3"></div>
+  <div class="core">SR<small>SAIEESH ROYAL</small></div>
+  <i class="shard s1"></i><i class="shard s2"></i><i class="shard s3"></i><i class="shard s4"></i>
+  <div class="visual-label">01 — FORM / MOTION / LIGHT</div>
+ </div>
+</section>
+<section id="about"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">01 / Introduction</div><h2 class="section-title">A little about<br>who I am.</h2></div><div class="section-index">PROFILE — 001</div></div>
+ <div class="about-grid"><div class="about-mark">G.</div><div><p class="about-text">Hello, I'm <strong>Guttapati Saieesh Royal</strong>, an aspiring technology professional currently pursuing a <strong>B.Tech in Computer Science &amp; Engineering</strong> at <strong>Uttaranchal University</strong>, Dehradun. I am in my third year, building my foundation in programming and exploring the possibilities of Artificial Intelligence and Machine Learning.</p><p class="about-text">I enjoy learning how software works, strengthening my problem-solving skills and discovering how technology can turn ideas into useful solutions. My goal is to keep learning, build meaningful projects and grow as an engineer.</p>
+ <div class="info-strip"><div class="info"><span>Based in</span><b>Dehradun, Uttarakhand</b></div><div class="info"><span>Current study</span><b>3rd Year · 5th Semester</b></div><div class="info"><span>Graduation</span><b>2028</b></div></div></div></div></div></section>
+<section id="skills"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">02 / Capabilities</div><h2 class="section-title">Tools in my<br>toolkit.</h2></div><div class="section-index">SKILLS — 004</div></div>
+ <div class="skill-grid"><article class="skill"><div class="skill-no">01 / LANGUAGE</div><h3>C</h3><p>Programming fundamentals</p></article><article class="skill"><div class="skill-no">02 / DATABASE</div><h3>SQL</h3><p>Working with structured data</p></article><article class="skill"><div class="skill-no">03 / LANGUAGE</div><h3>Java</h3><p>Object-oriented programming</p></article><article class="skill"><div class="skill-no">04 / LANGUAGE</div><h3>Python</h3><p>Programming &amp; exploration</p></article></div>
+ </div></section>
+<section><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">03 / Direction</div><h2 class="section-title">What sparks<br>my curiosity.</h2></div><div class="section-index">INTERESTS</div></div>
+ <div class="interest-grid"><div class="interest">Artificial Intelligence <span>↗ 01</span></div><div class="interest">Machine Learning <span>↗ 02</span></div><div class="interest">Software Development <span>↗ 03</span></div><div class="interest">Problem Solving <span>↗ 04</span></div></div></div></section>
+<section id="projects"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">04 / Selected work</div><h2 class="section-title">Projects &amp;<br>experiments.</h2></div><div class="section-index">LEARNING BUILDS</div></div>
+ <div class="project-grid">
+  <article class="project"><div class="project-tag">Practice build · Python</div><h3>Student Study Planner</h3><p>A beginner-friendly project idea for organising subjects, setting study goals and tracking weekly progress. Possible features include task lists, reminders and a simple progress summary.</p><p class="placeholder-note">Status: Planned learning project — not yet completed.</p></article>
+  <article class="project"><div class="project-tag">Practice build · Python + SQL</div><h3>Personal Expense Tracker</h3><p>A database practice project idea for recording daily expenses, grouping spending by category and viewing monthly totals using Python and SQL.</p><p class="placeholder-note">Status: Planned learning project — not yet completed.</p></article>
+  <article class="project"><div class="project-tag">AI / ML learning concept</div><h3>Student Performance Explorer</h3><p>A data-analysis project idea to explore how study time and attendance may relate to academic performance, with visual summaries and a beginner machine-learning experiment.</p><p class="placeholder-note">Status: Future concept — no model or results claimed.</p></article>
+ </div><p class="placeholder-note">These are project ideas for your learning roadmap, not completed work. Add screenshots, GitHub links and real results after you build them.</p></div></section>
+<section id="experience"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">05 / Experience</div><h2 class="section-title">Building my<br>career path.</h2></div><div class="section-index">EARLY CAREER</div></div>
+ <div class="education"><div class="year">2026 — PRESENT</div><article class="edu-card"><div class="eyebrow">Independent learning &amp; practice</div><h3>Self-directed Technical Development</h3><p>Developing programming fundamentals in C, Java and Python, practising SQL, and exploring introductory Artificial Intelligence and Machine Learning concepts.</p><p>Currently seeking a first internship, mentorship opportunity or collaborative project where I can learn from experienced developers and contribute responsibly.</p><span class="edu-pill">Learning by building</span><span class="edu-pill">Open to internships</span></article></div></div></section>
+<section id="education"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">06 / Academic path</div><h2 class="section-title">The learning<br>journey.</h2></div><div class="section-index">EDUCATION</div></div>
+ <div class="education"><div class="year">2024 — 2028</div><article class="edu-card"><div class="eyebrow">Undergraduate degree</div><h3>Uttaranchal University</h3><p>Bachelor of Technology — Computer Science &amp; Engineering</p><p>Currently pursuing · Third Year · Fifth Semester</p><span class="edu-pill">B.Tech · CSE</span><span class="edu-pill">Expected 2028</span><span class="edu-pill">Dehradun, India</span></article></div></div></section>
+<section><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">08 / Beyond the classroom</div><h2 class="section-title">Always in<br>progress.</h2></div><div class="section-index">GROWTH MINDSET</div></div>
+ <div class="growth"><article class="growth-card"><h3>Learning by doing</h3><p>Strengthening programming fundamentals and turning new concepts into practical exercises and projects.</p></article><article class="growth-card"><h3>Exploring AI &amp; ML</h3><p>Growing my understanding of intelligent technologies and the foundations behind machine learning.</p></article><article class="growth-card"><h3>Building consistency</h3><p>Developing a steady habit of learning, practising, reviewing and improving technical skills.</p></article><article class="growth-card"><h3>Open to opportunities</h3><p>Interested in learning experiences, collaboration and opportunities to grow in technology.</p></article></div>
+ <p class="placeholder-note">Internships, certifications and achievements can be added here when you share the details.</p></div></section>
+<section id="certifications"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">07 / Learning record</div><h2 class="section-title">Courses &amp;<br>certifications.</h2></div><div class="section-index">VERIFIED LEARNING</div></div>
+ <div class="growth"><article class="growth-card"><h3>Programming Foundations</h3><p>Strengthening core concepts through coursework and hands-on practice in C, Java and Python. Verified course certificates can be listed here when earned.</p><span class="edu-pill">In progress</span></article><article class="growth-card"><h3>SQL &amp; Data Fundamentals</h3><p>Practising relational database concepts, queries and structured data handling. Add the course provider and certificate link after successful completion.</p><span class="edu-pill">In progress</span></article><article class="growth-card"><h3>Artificial Intelligence &amp; Machine Learning</h3><p>Exploring introductory AI/ML concepts and learning how data-driven systems are developed and evaluated.</p><span class="edu-pill">Learning path</span></article><article class="growth-card"><h3>Certificate verification</h3><p>Only completed courses and genuine certificates will be displayed here, with their issuer, completion date and verification link where available.</p><span class="edu-pill">Portfolio standard</span></article></div></div></section>
+<section id="contact"><div class="wrap reveal"><div class="contact-panel"><div class="eyebrow">09 / Start a conversation</div><h2>Let's make<br>something matter.</h2><p>Have an idea, learning opportunity or project to discuss? I'd be glad to connect. Add your preferred email and professional profile links to make this section fully live.</p><a class="btn" href="mailto:YOUR-EMAIL@example.com" onclick="if(this.href.includes('YOUR-EMAIL')){alert('Replace YOUR-EMAIL@example.com with your email address in index.html to activate this button.');return false;}">Get in touch ↗</a></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 SAIEESH ROYAL</span><span>Designed with clarity · Built for what comes next</span></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
+
+const progress=document.getElementById('scroll-progress');
+const glow=document.querySelector('.cursor-glow');
+window.addEventListener('scroll',()=>{
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  progress.style.width=(max>0?(window.scrollY/max)*100:0)+'%';
+},{passive:true});
+window.addEventListener('pointermove',e=>{
+  if(glow){glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';}
+},{passive:true});
+document.querySelectorAll('.skill,.project,.info,.growth-card,.edu-card').forEach(card=>{
+  card.addEventListener('pointermove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5;
+    const y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`perspective(800px) rotateX(${-y*3}deg) rotateY(${x*3}deg) translateY(-5px)`;
+  });
+  card.addEventListener('pointerleave',()=>card.style.transform='');
+});
+
+</script>
+</body>
+</html>
